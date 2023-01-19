@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.package-container{
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+.package-container:hover{
+    box-shadow: 0px 0px 8px 8px rgba(128, 128, 128, 0.5);
+}
+
+.package-container:nth-child(1){
+    padding-top: 0%;
+}
+
+.package-container:nth-last-child(1){
+    border-radius: 20px;
+}
+
+.alt-package-container{
+    background-color: #cbb242;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+.alt-package-container:hover{
+    box-shadow: 0px 0px 8px 8px rgba(128, 128, 128, 0.5);
+}
+
+.package-container h1{
+    justify-content: center;
+    text-align: center;
+}
+
+.alt-package-container h1{
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+
+.alt-package-container p{
+    text-align: justify;
+    font-family: 'Poppins';
+    color: white;
+    font-size: medium;
+    font-weight: bolder;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    text-justify: inter-word;
+    float: right;
+}
+
+.package-container p{
+    text-align: justify;
+    font-family: 'Poppins';
+    font-size: medium;
+    font-weight: bolder;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    text-justify: inter-word;
+    float: left;
+}
+
+.profile-image{
+    border-radius: 6%;
+    height: 20em;
+    width: 100%;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    object-fit: cover;
+}

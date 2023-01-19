@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router, Route, Routes as Switch} from 'react-router-dom';
+import NavBar from './NavBar';
+import NotFound from './NotFound';
+import Home from "./Home";
+import Packages from "./Packages";
+import BookTicket from "./BookTicket";
+import "./App.css";
+import Footer from './Footer';
 
 function App() {
+  document.title = "Travello";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <NavBar/>
+      <Switch>
+        <Route exact path="/" element={<Home/>}/>
+        <Route exact path="/packages" element={<Packages/>}/>
+        <Route exact path="/book" element={<BookTicket/>}/>
+        <Route path="*" element={<NotFound/>}/>
+      </Switch>
+      <Footer/>
+    </Router>
   );
 }
 

@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
+
+h1{
+    font-family: 'Calligraffitti', cursive;
+    color: #cbb242;
+}
+
+.partner-img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.partner-img:hover{
+    box-shadow: 0px 0px 8px 8px rgba(128, 128, 128, 0.5);
+}
+
+.partners{
+    width: 75%;
+    margin: auto;
+    align-items: justify;
+    text-align: justify;
+    justify-content:center;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    transition: all 0.4s ease;
+    border-radius: 20px;
+}
+
+.partners:hover{
+    box-shadow: 0px 0px 8px 8px rgba(128, 128, 128, 0.5);
+}
+
+.white-bg{
+    background-color: rgb(255, 242, 242);
+}
+
+.back-color{
+    background-color: #cbb242;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+    .partners {
+      flex-direction: column;
+    }
+  }
